@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 
 import { Error } from "../interfaces/errorInterface";
 
-const ErrorHandlerMiddleware = async (
+const errorHandlerMiddleware = async (
     error: Error,
     _req: Request,
     res: Response,
@@ -17,4 +17,4 @@ const ErrorHandlerMiddleware = async (
     return res.sendStatus(500);
 }
 
-export { ErrorHandlerMiddleware }
+export { errorHandlerMiddleware }
